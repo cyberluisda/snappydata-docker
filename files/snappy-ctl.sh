@@ -36,9 +36,9 @@ run_bash(){
 }
 
 inspect_logs(){
-  tail -f /opt/snappydata/work/*/snappyleader.log \
-  /opt/snappydata/work/*/snappyserver.log \
-  /opt/snappydata/work/*/snappylocator.log
+  tail -f /usr/lib/snappydata/work/*/snappyleader.log \
+  /usr/lib/snappydata/work/*/snappyserver.log \
+  /usr/lib/snappydata/work/*/snappylocator.log
 }
 
 spark_shell(){
