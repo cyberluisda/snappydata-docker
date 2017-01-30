@@ -1,8 +1,7 @@
 FROM openjdk:8-jdk
 
-MAINTAINER Luis David Barrios Alfonso (luisdavid.barrios@agsnasoft.com)
+MAINTAINER Luis David Barrios Alfonso (luisdavid.barrios@agsnasoft.com / cyberluisda@gmail.com)
 
-#ADD http://apache.rediris.es/spark/spark-1.6.1/spark-1.6.1-bin-hadoop2.6.tgz /opt
 ENV SNAPPY_VERSION 0.5
 ADD https://github.com/SnappyDataInc/snappydata/releases/download/v${SNAPPY_VERSION}/snappydata-${SNAPPY_VERSION}-bin.tar.gz /usr/lib
 RUN cd /usr/lib && tar -zxvf snappydata-${SNAPPY_VERSION}-bin.tar.gz > /dev/null && rm -f snappydata-${SNAPPY_VERSION}-bin.tar.gz && cd - > /dev/null
